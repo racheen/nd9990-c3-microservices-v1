@@ -6,9 +6,6 @@ metadata:
   name: reverseproxy
 spec:
   replicas: 2
-  selector:
-    matchLabels:
-      service: reverseproxy
   template:
     metadata:
       labels:
@@ -28,5 +25,3 @@ spec:
         ports:
         - containerPort: 8080
       restartPolicy: Always
-
-
